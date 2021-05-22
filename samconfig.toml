@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "wikipedia-stack"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-9c43w58x8o82"
+s3_prefix = "wikipedia-stack"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=171279435862.dkr.ecr.us-east-1.amazonaws.com/wikipedia"]
